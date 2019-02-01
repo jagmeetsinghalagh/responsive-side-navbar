@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Responsive SideNav</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <div class="sidebar" id="sidebar">
+            <a href="#" class="closenav">&times;</a>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Services</a>
+        </div>
+        <nav class="navbar">
+            <span class="navbar-toggler">
+                <i class="fas fa-bars fa-2x"></i>
+            </span>
+            <a href="#" class="navbar-brand">LOGO</a>
+            <ul class="navbar-nav">
+                <li>
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">About</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">Services</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <div class="container">
+            <h2>Welcome to Responsive Navigation bar with CSS3 only.</h2>
+        </div>
+    </main>
+
+    
+
+    <script>
+        let sideNav = document.querySelector('#sidebar');
+        let toggler = document.querySelector('.navbar-toggler');
+        let closeNav = document.querySelector('.closenav');
+        toggler.addEventListener('click', () => {
+            sideNav.style.width = "45%";
+        });
+        closeNav.addEventListener('click', () => {
+            sideNav.style.width = "0";
+        });
+
+    </script>
+
+
+</body>
+</html>
